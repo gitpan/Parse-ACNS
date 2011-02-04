@@ -5,12 +5,15 @@ readme_from 'lib/Parse/ACNS.pm';
 install_share;
 
 requires 'XML::Compile::Schema';
-requires 'XML::LibXML';
 
 requires 'Carp';
 requires 'File::Spec';
 requires 'Scalar::Util';
 requires 'File::ShareDir';
 requires 'File::Spec';
+
+test_requires 'YAML::Any';
+test_requires 'Test::More';
+test_requires 'File::Spec';
 
 WriteAll;

@@ -4,7 +4,7 @@ use warnings;
 
 
 package Parse::ACNS;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -34,7 +34,6 @@ However, it B<doesn't> extract ACNS XML from email messages.
 use File::ShareDir ();
 use File::Spec ();
 use Scalar::Util qw(blessed);
-use XML::LibXML;
 use XML::Compile::Schema;
 
 our %CACHE = (
