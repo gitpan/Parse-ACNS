@@ -4,7 +4,7 @@ use warnings;
 
 
 package Parse::ACNS;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 
@@ -198,6 +198,9 @@ sub parse {
         }
         elsif ( $uri eq 'http://www.acns.net/ACNS' ) {
             # do nothing
+        }
+        elsif ( $uri =~ m{^http://www\.acns\.net\b}i ) {
+            $root->setNamespaceDeclURI($root->prefix, 'http://www.acns.net/ACNS');
         }
         else {
             die "Top level element has '$uri' namespace and it's not something we can parse as ACNS";
