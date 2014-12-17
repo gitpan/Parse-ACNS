@@ -32,3 +32,4 @@ t/data/1.1/full.yaml
 t/data/1.2/full.xml
 t/data/1.2/full.yaml
 t/parse.t
+SIGNATURE                                Public-key signature (added by MakeMaker)
